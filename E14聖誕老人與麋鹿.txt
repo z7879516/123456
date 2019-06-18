@@ -1,0 +1,20 @@
+
+package e14聖誕老人與麋鹿;
+import java.util.Scanner;
+public class E14聖誕老人與麋鹿 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("請輸入頭的總數目:");
+        int h=sc.nextInt();
+        System.out.print("請輸入腳的總數目:");
+        int l=sc.nextInt();
+        int o,d;
+        o=(h*4-l)/2;
+        d=h-o;
+        System.out.println("聖誕老人共有:"+o+"位");
+        System.out.println("麋鹿共有:"+d+"隻");
+    }
+    
+}

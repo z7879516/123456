@@ -1,0 +1,27 @@
+
+package e10變異數;
+import java.util.Scanner;
+public class E10變異數 
+{
+    public static void main(String[] args) 
+    {
+        Scanner a=new Scanner(System.in);
+        System.out.println("請輸入整數筆數(1~30)");
+        int b=a.nextInt();
+        while(b<1||b>30)
+        { System.out.println("請重新輸入整數筆數(1~30)");
+          b=a.nextInt(); }
+        int c[]=new int[b];
+        float d=0;
+        float e=0;
+        System.out.println("輸入數字");
+        for(int x=0;x<c.length;x++)
+        { c[x]=a.nextInt();
+          d=d+c[x];}
+          d=d/b;  
+        for(int x=0;x<c.length;x++)
+         e=e+(c[x]-d)*(c[x]-d);
+          e=e/b;
+        System.out.println(b+"筆整數的變異數為:"+e);
+    }   
+}

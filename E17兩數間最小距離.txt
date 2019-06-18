@@ -1,0 +1,32 @@
+
+package e17ㄢ计丁程禯瞒;
+import java.util.Scanner;
+public class E17ㄢ计丁程禯瞒 
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int a =1;
+        int min=0;
+        String ans ="";
+        while(true)
+        {a=sc.nextInt();
+        if(a != 0)
+        {
+        int arr[]=new int[a];
+            for(int x=0;x<a;x++)
+             {int b=sc.nextInt();
+              arr[x]=b;}
+            min=Math.abs(arr[1]-arr[0]);
+            for(int x=0;x<a-1;x++)
+            {
+              if(Math.abs(arr[x+1]-arr[x])<min)
+              min=Math.abs(arr[x+1]-arr[x]);
+            }
+          ans=ans+min+"\n"; 
+        }
+        else{break;}    
+        }
+        System.out.println(ans);
+    }
+}

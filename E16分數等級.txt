@@ -1,0 +1,34 @@
+
+package e16だ计单;
+import java.util.Scanner;
+public class E16だ计单 
+{
+    public static void main(String[] args) 
+    {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("叫块俱计掸计:");
+    int a=sc.nextInt();
+    int arr[]=new int[a];
+    int b;
+    int c=0;//羆
+    for(int x=0;x<a;x++)
+    { b=sc.nextInt();
+      arr[x]=b;
+      c=c+arr[x];
+    }
+    float d=(float)c/(float)a;//キА
+    System.out.println("羆:"+c);
+    System.out.println("キА:"+d);
+    for(int x=0;x<a;x++){
+    if(arr[x]>=80&&arr[x]<=100)
+        System.out.println(arr[x]+":A");
+    else if(arr[x]>=60&&arr[x]<80)
+        System.out.println(arr[x]+":B");
+    else if(arr[x]>=40&&arr[x]<60)
+        System.out.println(arr[x]+":C");
+    else if(arr[x]>=20&&arr[x]<40)
+        System.out.println(arr[x]+":E");
+    else if(arr[x]>=0&&arr[x]<20)
+        System.out.println(arr[x]+":F");}
+    }
+}
